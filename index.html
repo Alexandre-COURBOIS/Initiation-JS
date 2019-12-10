@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title></title>
     <script type="text/javascript" src="./assets/js/functions/IsLeapYear.js"></script>
+    <script type="text/javascript" src="./assets/js/functions/CalculerVolumeCylindre.js"></script>
 
 </head>
 
@@ -12,6 +13,7 @@
 <body>
 
     <p id="truc">Ceci est un paragraphe</p>
+
     <script type="text/javascript" src="./assets/js/script.js"></script>
 
 
@@ -19,7 +21,7 @@
 
     <script>
 
-        let reponse = prompt('Quelle année ?');
+/*        let reponse = prompt('Quelle année ?');
 
         if (isLeapYear(reponse)) {
             alert('Wesh !');
@@ -27,8 +29,31 @@
 
         else {
             alert('Not wesh!');
+        }*/
+
+        /////
+/*        let rayon = prompt('C\'est quoi l\'rayon ?');
+        let hauteur = prompt('Pis c\'est quoi la hauteur ?');
+
+        let resultat = CalculerVolumeCylindre(rayon, hauteur);
+
+        if (resultat) alert(resultat);
+
+        else alert('paie ta tournée');*/
+
+        function afficherMichel() {
+            document.getElementById('wrap').innerHTML = '<p> Michel !</p>'
         }
+
+
+
     </script>
+
+    <div id="wrap"></div>
+    <h1 ondblclick="afficherMichel()">Clique-moi !</h1>
+
+
+
 </body>
 
 </html>
