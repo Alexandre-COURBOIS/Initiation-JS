@@ -4,18 +4,31 @@
 
     <meta charset="utf-8">
     <title></title>
-    <script type="text/javascript" src="./assets/js/script.js"></script>
-
+    <script type="text/javascript" src="./assets/js/functions/IsLeapYear.js"></script>
 
 </head>
 
 
 <body>
 
+    <p id="truc">Ceci est un paragraphe</p>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 
 
+<!--    /*On utilises la fonction ci dessous : */-->
 
+    <script>
 
+        let reponse = prompt('Quelle année ?');
+
+        if (isLeapYear(reponse)) {
+            alert('Wesh !');
+        }
+
+        else {
+            alert('Not wesh!');
+        }
+    </script>
 </body>
 
 </html>
