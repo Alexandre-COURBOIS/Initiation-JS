@@ -6,22 +6,24 @@
     <title></title>
     <script type="text/javascript" src="./assets/js/functions/IsLeapYear.js"></script>
     <script type="text/javascript" src="./assets/js/functions/CalculerVolumeCylindre.js"></script>
+    <script type="text/javascript" src="./assets/js/functions/checkFrm.js"></script>
+    <script type="text/javascript" src="./assets/js/functions/convertirDecimal.js"></script>
 
 </head>
 
 
 <body>
-
+<!--
     <p id="truc">Ceci est un paragraphe</p>
 
     <script type="text/javascript" src="./assets/js/script.js"></script>
 
 
-<!--    /*On utilises la fonction ci dessous : */-->
+    On utilises la fonction ci dessous :
 
     <script>
 
-/*        let reponse = prompt('Quelle année ?');
+       let reponse = prompt('Quelle année ?');
 
         if (isLeapYear(reponse)) {
             alert('Wesh !');
@@ -29,17 +31,19 @@
 
         else {
             alert('Not wesh!');
-        }*/
+        }
 
-        /////
-/*        let rayon = prompt('C\'est quoi l\'rayon ?');
+
+        let rayon = prompt('C\'est quoi l\'rayon ?');
         let hauteur = prompt('Pis c\'est quoi la hauteur ?');
 
         let resultat = CalculerVolumeCylindre(rayon, hauteur);
 
         if (resultat) alert(resultat);
 
-        else alert('paie ta tournée');*/
+        else alert('paie ta tournée');
+
+        Fonction ici pour affichermichel sur un click relier à h1
 
         function afficherMichel() {
             document.getElementById('wrap').innerHTML = '<p> Michel !</p>'
@@ -47,10 +51,141 @@
 
 
 
-    </script>
+    Ci dessous ce qui se trouve dans les ul li sera chargé d'office au demarrage de la page avec window.onload
+
+
+        window.onload = function() {
+            document.getElementById('wrap').innerHTML = '<ul><li>Michel</li><li>Marc</li><li>Roger</li><li>Jean-pierre</li><li>Gasper</li></ul>'
+        }
+
+
+        Avec une boucle while la même chose mais potentiellement jusqu'à l'infinis
+
+         window.onload = function() {
+
+        let compteur = 1;
+        let balise = '<ul>';
+
+        while (compteur <= 5) {
+
+            balise += '<li>';
+            balise += 'Element ' + compteur;
+            balise += '</li>';
+            compteur++;
+        }
+
+        balise += '</ul>';
+
+        document.getElementById('wrap2').innerHTML = balise;
+
 
     <div id="wrap"></div>
-    <h1 ondblclick="afficherMichel()">Clique-moi !</h1>
+
+
+    Relier à la fonction afficher michel
+             <h1 ondblclick="afficherMichel()">Clique-moi !</h1>
+
+
+
+</script>
+    -->
+<!--<script>
+
+
+</script>
+
+    <form id="form" action="" method="post">
+
+
+        <label>Nom</label>
+
+        <input type="text" id="nom" placeholder="votre nom">
+
+        <label>Prenom</label>
+        <input type="text" id="prenom" placeholder="votre prénom">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="votre email">
+
+        <button onclick="checkFrm()">Envoyer</button>
+
+        </form>-->
+
+<script>
+/*    let coincoin = new Object();
+/!*     // let coincoin = {};*!/
+
+    coincoin.couleur = 'verte';
+    coincoin.taille = 152;
+    coincoin.clafoutis = 'cerise';
+    coincoin.choucroute = 'biere';
+    coincoin.taille = 120;
+    coincoin.objet = new Object();
+    coincoin.objet.diametre = 120;
+
+
+    alert(coincoin.clafoutis);
+
+    let mage = new Object();
+    let mageMichel = new Object();
+
+    mage.magie = 30;
+    mageMichel.magie = 40;
+
+    mage.magie = 25;
+
+    mage.casserLaGueule = function() {
+        mageMichel.magie -= 10;
+    }*/
+/*
+
+    class Voiture {
+        constructor(masse, vitesse, couleur, marque, modele, volumeReservoir) {
+            this.masse = masse;
+            this.vitesse = vitesse;
+            this.couleur = couleur;
+            this.marque = marque;
+            this.modele = modele;
+            this.volumeReservoir = volumeReservoir;
+        }
+
+        calculerEnergieCinetique() {
+           return 0.5 * this.masse * Math.pow(this.vitesse, 2);
+        }
+
+        calculerMasseConsommation(consommation) {
+            this.masse = this.masse - 0.755 * consommation;
+        }
+
+    }
+
+    let voiture1 = new Voiture(1000, 0, 'rouge', 'Simca','1000', 45);
+    let voiture2 = new Voiture(800, 0, 'noir', 'Renault', '4L', 30);
+
+    voiture1.vitesse = 50;
+    console.log(voiture1.calculerEnergieCinetique());
+    voiture1.calculerMasseConsommation(15);
+    console.log(voiture1.masse);
+    console.log(voiture1.calculerEnergieCinetique());
+*/
+
+
+
+</script>
+
+<form method="post" action="#">
+
+    <div>
+
+        <label for="color">Couleur :</label>
+
+        <input type="color" name="color" id="choosenColor" />
+
+        <button onclick="convertirDecimal()"> Code Hexa</button>
+
+    </div>
+
+</form>
 
 
 
